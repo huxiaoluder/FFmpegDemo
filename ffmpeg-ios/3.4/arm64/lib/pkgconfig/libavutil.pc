@@ -1,0 +1,14 @@
+prefix=/usr/local/Custom/ffmpeg-ios/3.4/arm64
+exec_prefix=${prefix}
+libdir=/usr/local/Custom/ffmpeg-ios/3.4/arm64/lib
+includedir=/usr/local/Custom/ffmpeg-ios/3.4/arm64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
