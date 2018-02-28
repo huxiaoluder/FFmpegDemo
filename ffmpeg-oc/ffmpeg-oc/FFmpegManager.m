@@ -390,17 +390,17 @@
         swr_init(swr_ctx);
         
         // 计算每一帧含有音频样本的最大容量
-        size_t max_buff_size = dec_ctx->channels * av_get_bytes_per_sample(dec_ctx->sample_fmt);
+//        size_t max_buff_size = dec_ctx->channels * av_get_bytes_per_sample(dec_ctx->sample_fmt);
         
         // 实例化音频采样数据缓冲区
 //        cnv_data_buf = av_malloc(<#size_t size#>);
         
-        av_samples_alloc(<#uint8_t **audio_data#>, <#int *linesize#>, <#int nb_channels#>, <#int nb_samples#>, <#enum AVSampleFormat sample_fmt#>, <#int align#>);
+//        av_samples_alloc(<#uint8_t **audio_data#>, <#int *linesize#>, <#int nb_channels#>, <#int nb_samples#>, <#enum AVSampleFormat sample_fmt#>, <#int align#>);
 //        cnv_data_buf = av_samples_alloc_array_and_samples(<#uint8_t ***audio_data#>, <#int *linesize#>, <#int nb_channels#>, <#int nb_samples#>, <#enum AVSampleFormat sample_fmt#>, <#int align#>);
     }
     
     
-        av_samples_fill_arrays(<#uint8_t **audio_data#>, <#int *linesize#>, <#const uint8_t *buf#>, <#int nb_channels#>, <#int nb_samples#>, <#enum AVSampleFormat sample_fmt#>, <#int align#>)
+//        av_samples_fill_arrays(<#uint8_t **audio_data#>, <#int *linesize#>, <#const uint8_t *buf#>, <#int nb_channels#>, <#int nb_samples#>, <#enum AVSampleFormat sample_fmt#>, <#int align#>)
 
 
     // 6.1 读取音频流, 获得压缩数据包
